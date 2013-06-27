@@ -1,4 +1,4 @@
-6.004_courseware
+50.002_courseware
 ================
 
-Courseware used in the 6.004 Labs (jsim, tmsim, bsim)
+Courseware used in the 50.002 Labs (jsim, tmsim, bsim)
