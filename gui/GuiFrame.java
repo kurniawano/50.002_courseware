@@ -711,7 +711,7 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 	JLabel l = new JLabel("Verification succeeded!");
 	g.setConstraints(l,gc);
 	msg.add(l);
-	l = new JLabel("Please enter your 6.004 user name and password:");
+	l = new JLabel("Please enter your 50.002 user name and password:");
 	g.setConstraints(l,gc);
 	msg.add(l);
 

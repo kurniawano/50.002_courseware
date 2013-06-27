@@ -20,8 +20,8 @@ import java.util.Date;
 import javax.swing.JOptionPane;
 
 public class BSim extends GuiFrame implements ActionListener, WindowListener {
-    public static String version = "1.2.2";
-    public static String copyright = "Copyright (C) Christopher J. Terman 2000-2011";
+    public static String version = "1.0.0";
+    public static String copyright = "Copyright (C) Christopher J. Terman 2000-2011, Modified by Oka Kurniawan 2013 based on BSim 1.2.2";
 
     public static final String ASSEMBLE = "Run UASM";
     public static final String A2FILE = "UASM to .bin file";
