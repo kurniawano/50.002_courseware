@@ -590,11 +590,11 @@ public class Beta extends JPanel implements ActionListener, Runnable, KeyListene
 		npc = rd1 & 0x7FFFFFFC;
 		if (!kalways && (rd1 & 0x80000000) == 0) npcmsb = 0;
 		break;
-	    case 0x1C:			// BEQ (updated F11)
+	    case 0x1D: //case 0x1C:			// BEQ (updated F11)
 		wdata = (pcmsb << 31) | npc;
 		if (rd1 == 0) npc = (npc + 4*literal) & 0x7FFFFFFC;
 		break;
-	    case 0x1D:			// BNE (updated F11)
+	    case 0x1E: //case 0x1D:			// BNE (updated F11)
 		wdata = (pcmsb << 31) | npc;
 		if (rd1 != 0) npc = (npc + 4*literal) & 0x7FFFFFFC;
 		break;
@@ -784,7 +784,7 @@ public class Beta extends JPanel implements ActionListener, Runnable, KeyListene
 		if (rc == 31) i += "JMP("+Reg(ra)+")";
 		else i += "JMP("+Reg(ra)+","+Reg(rc)+")";
 		break;
-	    case 0x1C:			// BEQ (updated F11)
+	    case 0x1D: //case 0x1C:			// BEQ (updated F11)
 		if (ra == 31) {
 		    if (rc == 31) i += "BR("+Offset(addr,literal)+")";
 		    else i += "BR("+Offset(addr,literal)+","+Reg(rc)+")";
@@ -793,7 +793,7 @@ public class Beta extends JPanel implements ActionListener, Runnable, KeyListene
 		else
 		    i += "BEQ("+Reg(ra)+","+Offset(addr,literal)+","+Reg(rc)+")";
 		break;
-	    case 0x1D:			// BNE (updated F11)
+	    case 0x1E: //case 0x1D:			// BNE (updated F11)
 		if (rc == 31)
 		    i +="BNE("+Reg(ra)+","+Offset(addr,literal)+")";
 		else
