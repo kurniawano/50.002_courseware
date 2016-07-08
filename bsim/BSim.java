@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 public class BSim extends GuiFrame implements ActionListener, WindowListener {
     public static String version = "1.0.1";
-    public static String copyright = "Copyright (C) Christopher J. Terman 2000-2011, Modified by Oka Kurniawan 2013 based on BSim 1.2.2";
+    public static String copyright = "Copyright (C) Christopher J. Terman 2000-2011, Modified by Oka Kurniawan 2013 based on BSim 1.2.3";
 
     public static final String ASSEMBLE = "Run UASM";
     public static final String A2FILE = "UASM to .bin file";

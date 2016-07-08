@@ -28,7 +28,7 @@ import plot.Plot;
 
 public class JSim extends GuiFrame implements ActionListener, WindowListener {
     public static String version = "1.0.0";
-    public static String copyright = "Copyright (C) Christopher J. Terman 1997-2013, Modified by Oka Kurniawan 2013 based on JSim 2.1.2";
+    public static String copyright = "Copyright (C) Christopher J. Terman 1997-2013, Modified by Oka Kurniawan 2013 based on JSim 2.1.8";
 
     String cmdargs[] = null;	// command line args
     GuiFrame plot;
