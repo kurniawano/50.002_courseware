@@ -267,7 +267,7 @@ public class Netlist extends EditBuffer implements ActionListener, Runnable {
 	}
 
 	if (checkoffChecksum != 0 && vChecksum != checkoffChecksum) {
-	    return ("<font size=5>Verification error...</font><p>It appears that the checkoff information has been modified in some way.  Please verify that you are using the official checkoff file; contact 6004-labs@lists.csail.mit.edu if you can't resolve the problem.");
+	    return ("<font size=5>Verification error...</font><p>It appears that the checkoff information has been modified in some way.  Please verify that you are using the official checkoff file; contact oka_kurniawan@sutd.edu.sg if you can't resolve the problem.");
 	}
 
 	return null;	// checkoff okay to proceed
