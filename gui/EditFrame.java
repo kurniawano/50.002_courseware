@@ -57,7 +57,8 @@ public class EditFrame extends EditPanel implements ActionListener, AdjustmentLi
 	hbar.addAdjustmentListener(this);
 	hbar.setBackground(UI.BGCOLOR);
 
-	Dimension bdim = new Dimension(16,16);
+	//Dimension bdim = new Dimension(16,16);
+	Dimension bdim = new Dimension(20,20);
 	b1 = p.ImageButton("/icons/zoomin.gif");
 	b1.setToolTipText("Zoom in");
 	b1.addActionListener(this);

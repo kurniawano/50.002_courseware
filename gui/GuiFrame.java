@@ -113,7 +113,8 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 		    } else message.setText("");
 		}
 	    };
-
+	//Get screen size
+	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	// build contents
 	Container contentPane = getContentPane();
 	contentPane.setLayout(new BorderLayout());
@@ -121,6 +122,10 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 	// tool bar goes at top
 	bbar = new JToolBar();
 	bbar.putClientProperty("JToolBar.isRollover",Boolean.TRUE);
+	//set size for toolbar
+	Dimension cdim=new Dimension(screenSize.width,50);
+	bbar.setPreferredSize(cdim);
+
 	contentPane.add(bbar,BorderLayout.NORTH);
 
 	// tabs are next
@@ -150,9 +155,12 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 	} else progress = null;
 
 	// set frame size
-	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-	screenSize.width = Math.min(815,screenSize.width - 50);
-	screenSize.height = Math.min(630,screenSize.height - 50);
+
+	//screenSize.width = Math.min(815,screenSize.width - 50);
+	//screenSize.height = Math.min(630,screenSize.height - 50);
+	screenSize.width = Math.min(835,screenSize.width - 50);
+	screenSize.height = Math.min(650,screenSize.height - 50);
+
 	setSize(screenSize.width,screenSize.height);
 
 	addWindowListener(this);
@@ -168,7 +176,12 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
     }
 
     public JButton AddToolButton(JToolBar toolbar,String image,String action,ActionListener al) {
+
 	JButton button = ImageButton(image);
+	//Set dimension of button
+	Dimension bdim = new Dimension(50,50);
+	button.setMinimumSize(bdim);
+	button.setMaximumSize(bdim);
 	button.setToolTipText(action);
 	button.setActionCommand(action);
 	button.addActionListener(al);
