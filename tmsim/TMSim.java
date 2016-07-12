@@ -28,7 +28,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 public class TMSim extends GuiFrame implements ActionListener, WindowListener {
-    public static String version = "1.0.0";
+    public static String version = "1.1.0";
     public static String copyright = "Copyright (C) Christopher J. Terman 2003-2013, Modified by Oka Kurniawan 2013 based on TMSim 1.2.2";
 
     public static String DUMMY_TM = 
