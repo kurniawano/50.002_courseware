@@ -73,7 +73,8 @@ public class PlotCanvas extends JComponent implements MouseListener, MouseMotion
 	    cursor[i] = new Rectangle();
 	    locnBBox[i] = new Rectangle();
 	}
-	tfont = new Font("Helvetica",Font.PLAIN,10);
+	//tfont = new Font("Helvetica",Font.PLAIN,10);
+	tfont = new Font("Helvetica",Font.PLAIN,12);
 
 	addMouseListener(this);
 	addMouseMotionListener(this);
@@ -591,7 +592,8 @@ public class PlotCanvas extends JComponent implements MouseListener, MouseMotion
   
     public void Print(Graphics g,int pgrid,int xorg,int yorg,int w,int h) {
 	// setup font info
-	Font f = Font.decode("SansSerif-plain-10");
+	//Font f = Font.decode("SansSerif-plain-10");
+   	Font f = Font.decode("SansSerif-plain-12");
 	FontMetrics fm = g.getFontMetrics(f);
 	int ascent = fm.getAscent();
 	int letting = ascent + fm.getDescent();

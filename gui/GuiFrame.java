@@ -506,7 +506,8 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 	}
 		
 	if (pj != null) {
-	    Font tfont = Font.decode("SansSerif-bold-14");
+	    //Font tfont = Font.decode("SansSerif-bold-14");
+	    Font tfont = Font.decode("SansSerif-bold-16");
 	    FontMetrics tfm = Toolkit.getDefaultToolkit().getFontMetrics(tfont);
 	    int fheight = tfm.getMaxDescent() + tfm.getMaxAscent();
 	    int margin = 5;
@@ -534,7 +535,8 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 		
     // output banner at bottom of page
     public void PrintBanner(Graphics g,Dimension d,Dimension offset,String text) {
-	Font tfont = Font.decode("SansSerif-bold-14");
+	//Font tfont = Font.decode("SansSerif-bold-14");
+   	Font tfont = Font.decode("SansSerif-bold-16");
 	FontMetrics tfm = g.getFontMetrics(tfont);
 	int fheight = tfm.getMaxDescent() + tfm.getMaxAscent();
 	int margin = 5;

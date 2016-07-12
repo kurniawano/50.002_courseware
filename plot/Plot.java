@@ -75,7 +75,8 @@ public class Plot extends JPanel implements AdjustmentListener, ActionListener, 
 	panels = new PlotCanvas[MAXPANELS];
 	names =  new JTextArea[MAXPANELS];
 	wrappers = new JScrollPane[MAXPANELS];
-	Font font = new Font("Courier",Font.PLAIN,12);
+	//Font font = new Font("Courier",Font.PLAIN,12);
+	Font font = new Font("Courier",Font.PLAIN,14);
 	for (int i = 0; i < MAXPANELS; i += 1) {
 	    panels[i] = new PlotCanvas(this);
 	    add(panels[i]);

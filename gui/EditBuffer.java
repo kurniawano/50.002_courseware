@@ -58,7 +58,8 @@ public class EditBuffer extends EditPanel implements ActionListener, DocumentLis
 	text = new JTextArea/*JTextPane*/();
 	String fname = parent.GetParameter("font");
 	Font f = (fname != null) ? Font.decode(fname) :
-	    new Font("Courier",Font.PLAIN,12);
+	    //new Font("Courier",Font.PLAIN,12);
+	    new Font("Courier",Font.PLAIN,14);
 	text.setFont(f);
 	scroll = new JScrollPane(text);
 	add(scroll,BorderLayout.CENTER);

@@ -1314,7 +1314,8 @@ public class Beta extends JPanel implements ActionListener, Runnable, KeyListene
     }
 
     private void SelectFont(Graphics g) {
-	int size = 10;
+	//int size = 10;
+    int size=12;
 	int lastSize = -1;
 	FontMetrics fm;
 	int maxx,maxy;
