@@ -168,7 +168,8 @@ public class GuiFrame extends JFrame implements ActionListener, WindowListener, 
 
     public JButton ImageButton(String image) {
 	Image i = GetImageResource(image);
-	return new JButton(new ImageIcon(i));
+	Image newi =i.getScaledInstance(30,30,Image.SCALE_SMOOTH);
+	return new JButton(new ImageIcon(newi));
     }
 
     public JButton AddToolButton(String image,String action,ActionListener al) {
